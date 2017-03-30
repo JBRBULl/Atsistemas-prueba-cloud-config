@@ -1,5 +1,12 @@
 server:  
   port: 1111   # HTTP port
+  
+eureka:
+  instance:
+    hostname: localhost
+  client:  # Not a client, don't register with yourself
+    registerWithEureka: false
+    fetchRegistry: false
 
 logging:  
   file: logs/${spring.application.name}.log
@@ -7,3 +14,5 @@ logging:
     com.netflix.discovery: 'OFF'
     org.springframework.cloud: 'DEBUG'
     com.atsistemas: 'DEBUG'
+
+
