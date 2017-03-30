@@ -1,6 +1,9 @@
 # HTTP Server
 server:  
   port: 0   # HTTP port
+eureka:
+  instance:
+    hostname: localhost
 
 # Discovery Server Access
 eureka:  
